@@ -1,0 +1,91 @@
+body{
+    background-color: white(12, 12, 12);          
+}
+
+.titulo{
+    background-color: bisque;
+    text-align: center;
+    color: Orange;
+    font-family: 'Hanalei Fill', cursive;    
+    font-size: 25px;
+}
+
+.descricaoLogin{
+    color:black;
+    text-align: center;
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 15px;
+}
+
+input{
+    margin: 0 auto; /*Definindo maring 0 para centralizar input*/
+    display: block; /*Deixando block para deixar texto em cima centralizado e input embaixo*/
+    border-radius: 10px; /*Borda do input*/
+    font-size: 12px;
+}
+
+.link, a{    
+    background-color: bisque;
+    color: blue;
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.rodape{    
+    color: blue;
+    background-color: bisque;
+    font-size: 15px;   
+    font-family: 'Hanalei Fill', cursive;    
+    text-align: center;
+    /*position:fixed;
+    bottom:0;*/
+}
+
+.bemVindoTitulo{
+    color: orange;
+    font-size: 25px;   
+    font-family: 'Hanalei Fill', cursive;  
+}
+
+.clientesTitulo{
+    color: orange;
+    font-size: 25px;   
+    font-family: 'Hanalei Fill', cursive;  
+}
+
+.menuTelaInicial{
+    text-align: center;    
+}
+
+.menuClientes{
+    text-align: center;    
+}
+
+.logoFacebook{
+    position: fixed;
+    left: 85%;
+    top: 7%;
+    height: 50px;       
+    width: 50px;
+}
+
+.logoInstagram{
+    position: fixed;
+    left: 90%;
+    top: 7%;
+    height: 53px;       
+    width: 100px;
+}
+
+#const{
+    color: orange;
+}
+
+.nomeTarefa{
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 15px;
+    font-weight: bold
+}
+
