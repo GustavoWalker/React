@@ -84,7 +84,8 @@ function DadosClientes(){
 
           
           <p class='nomeTarefa'>CEP: {user.cep}</p>   
-          <Link to="/InfoCep">Verifica Endereço </Link>
+          {/* <Link to="/InfoCep">Verifica Endereço </Link> */}
+          <Link to={`/InfoCep?cep=${cep}`}>Verifica Endereço </Link>
           
 
           <p class='nomeTarefa'>Número Residência: {user.num}</p>

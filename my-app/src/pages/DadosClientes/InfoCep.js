@@ -1,7 +1,4 @@
 import React from 'react';
-import DadosClientes from './DadosClientes';
-
-
 
 class InfoCep extends React.Component {    
     state = {
@@ -9,9 +6,8 @@ class InfoCep extends React.Component {
     };
 
     componentDidMount() {
-
-        fetch(`https://viacep.com.br/ws/${DadosClientes.cep}/json/`) //CHAMAR A VARIÁVEL
-        //fetch(`https://viacep.com.br/ws/13175667/json/`)    
+        let cep = (new URLSearchParams(window.location.search)).get("cep")
+        fetch(`https://viacep.com.br/ws/${cep}/json/`)            
         .then(res => res.json())
             .then(res => {
                 this.setState({

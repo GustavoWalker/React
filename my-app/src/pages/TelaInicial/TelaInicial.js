@@ -32,6 +32,15 @@ function TelaInicial(){
 
   }
 
+  function handleDelete(e){
+    e.preventDefault();
+
+    setTarefas([]);
+    localStorage.setItem('tarefas',JSON.stringify(tarefas));
+    
+
+  }
+
   return (
     <div>
       <div class='bemVindoTitulo'>
@@ -53,7 +62,7 @@ function TelaInicial(){
       
       <br/><br/><br/><br/>
 
-      <form onSubmit={handleRegister}>
+      <form>
         <center>
           <label class='nomeTarefa'>📋 📅 Nome da tarefa: 📅 📋</label>
           <br/><br/>
@@ -62,8 +71,8 @@ function TelaInicial(){
           
           <br/>
 
-          <button type="submit">Adicionar</button>
-          <button type="resert">Limpar</button>
+          <button type="submit" onClick={handleRegister}>Adicionar</button>
+          <button type="resert" onClick={handleDelete}>Limpar</button>
         </center>
       </form>
 
